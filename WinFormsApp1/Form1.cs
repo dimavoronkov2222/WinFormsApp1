@@ -1,5 +1,4 @@
 using WinFormsApp1.Folder_with_confidential_data;
-
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
