@@ -45,11 +45,13 @@
             OPEN = new OpenFileDialog();
             button4 = new Button();
             button5 = new Button();
+            button6 = new Button();
+            button7 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(127, 365);
+            button1.Location = new Point(134, 365);
             button1.Name = "button1";
             button1.Size = new Size(172, 86);
             button1.TabIndex = 0;
@@ -174,11 +176,33 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += importtxt;
             // 
+            // button6
+            // 
+            button6.Location = new Point(312, 365);
+            button6.Name = "button6";
+            button6.Size = new Size(118, 86);
+            button6.TabIndex = 14;
+            button6.Text = "Delete confidantial data";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += deleteButton_Click;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(12, 365);
+            button7.Name = "button7";
+            button7.Size = new Size(116, 86);
+            button7.TabIndex = 15;
+            button7.Text = "Edit confidantial data";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += editButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1206, 759);
+            Controls.Add(button7);
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -218,5 +242,7 @@
         private OpenFileDialog OPEN;
         private Button button4;
         private Button button5;
+        private Button button6;
+        private Button button7;
     }
 }

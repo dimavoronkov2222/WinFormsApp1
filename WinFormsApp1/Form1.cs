@@ -105,5 +105,20 @@ namespace WinFormsApp1
                 }
             }
         }
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex != -1)
+            {
+                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+            }
+        }
+        private void editButton_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex != -1)
+            {
+                string data = " Name: " + name.Text + " Surname: " + surname.Text + " e-mail: " + e_mail.Text + " Phone: " + phone.Text;
+                listBox1.Items[listBox1.SelectedIndex] = data;
+            }
+        }
     }
 }
